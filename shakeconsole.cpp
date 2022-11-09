@@ -21,7 +21,7 @@ int main() {
   list<int> result;
   list<int>::iterator it;
   int position;
-  string fileName = "/home/class/shake/Shakespeare.txt";
+  string fileName = "shakespeare.txt";
   string word, line;
   // create text index
   textindex index(fileName);
@@ -50,7 +50,7 @@ int main() {
 	  // Give the match count
 	  cout << "Matches: " << results << endl;
 	  /* Traverse the list of references */
-	  /*for (it = result.begin() ; it != result.end(); it++)
+	  for (it = result.begin() ; it != result.end(); it++)
 	  {
 	    // Grab the postion of the reference out of the iterator
 	    position = (*it);
@@ -58,7 +58,7 @@ int main() {
 	    textFile.seekg (position, ios::beg);
 	    getline(textFile,line);
 	    cout << line << endl;
-	    }*/
+	    }
 
    } // results
 }
